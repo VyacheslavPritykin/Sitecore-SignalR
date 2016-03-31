@@ -1,0 +1,73 @@
+<project>
+  <Metadata>
+    <metadata>
+      <PackageName>Sitecore.SignalR</PackageName>
+      <Author>Vyacheslav Pritykin</Author>
+      <Version>1.0.0</Version>
+      <Revision />
+      <License />
+      <Comment>SignalR support for Sitecore</Comment>
+      <Attributes />
+      <Readme>Before installing:
+
+1. To use Sitecore SignalR you should install Sitecore OWIN module first. Here is the how to install guide: https://github.com/VyacheslavPritykin/Sitecore-Owin#how-to-install
+
+2. Add the following assembly bindings into the Web.config runtime/assemblyBinding:
+
+&lt;dependentAssembly&gt;
+  &lt;assemblyIdentity name="Microsoft.Owin" publicKeyToken="31bf3856ad364e35" culture="neutral" /&gt;
+  &lt;bindingRedirect oldVersion="0.0.0.0-3.0.1.0" newVersion="3.0.1.0" /&gt;
+&lt;/dependentAssembly&gt;
+&lt;dependentAssembly&gt;
+  &lt;assemblyIdentity name="Microsoft.Owin.Security" publicKeyToken="31bf3856ad364e35" culture="neutral" /&gt;
+  &lt;bindingRedirect oldVersion="0.0.0.0-3.0.1.0" newVersion="3.0.1.0" /&gt;
+&lt;/dependentAssembly&gt;</Readme>
+      <Publisher />
+      <PostStep />
+      <PackageID />
+    </metadata>
+  </Metadata>
+  <SaveProject>True</SaveProject>
+  <Sources>
+    <xfiles>
+      <Entries>
+        <x-item>/bin/Microsoft.AspNet.SignalR.Core.dll</x-item>
+        <x-item>/bin/Microsoft.AspNet.SignalR.Core.xml</x-item>
+        <x-item>/bin/Microsoft.AspNet.SignalR.SystemWeb.dll</x-item>
+        <x-item>/bin/Microsoft.AspNet.SignalR.SystemWeb.xml</x-item>
+        <x-item>/bin/Microsoft.Owin.Security.dll</x-item>
+        <x-item>/bin/Microsoft.Owin.Security.xml</x-item>
+        <x-item>/bin/Sitecore.SignalR.dll</x-item>
+        <x-item>/Scripts/jquery-2.2.2.min.js</x-item>
+        <x-item>/Scripts/jquery.signalR-2.2.0.min.js</x-item>
+        <x-item>/App_Config/Include/Sitecore.SignalR.config</x-item>
+      </Entries>
+      <Converter>
+        <FileToEntryConverter>
+          <Root>/</Root>
+          <Transforms>
+            <InstallerConfigurationTransform>
+              <Options>
+                <BehaviourOptions>
+                  <ItemMode>Undefined</ItemMode>
+                  <ItemMergeMode>Undefined</ItemMergeMode>
+                </BehaviourOptions>
+              </Options>
+            </InstallerConfigurationTransform>
+          </Transforms>
+        </FileToEntryConverter>
+      </Converter>
+      <Include />
+      <Exclude />
+      <Name>files</Name>
+    </xfiles>
+  </Sources>
+  <Converter>
+    <TrivialConverter>
+      <Transforms />
+    </TrivialConverter>
+  </Converter>
+  <Include />
+  <Exclude />
+  <Name />
+</project>
