@@ -62,8 +62,8 @@
     <Reference Include="Sitecore.Kernel">
       <HintPath>..\Sitecore.Core.API\Sitecore.Kernel.dll</HintPath>
     </Reference>
-    <Reference Include="Sitecore.Owin, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Sitecore.Owin.1.0.0\lib\45\Sitecore.Owin.dll</HintPath>
+    <Reference Include="Sitecore.Owin, Version=1.0.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sitecore.Owin.1.0.1\lib\45\Sitecore.Owin.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
@@ -86,7 +86,9 @@
     <None Include="App_Config\Include\Sitecore.SignalR.config">
       <SubType>Designer</SubType>
     </None>
+    <None Include="nuget.pack.bat" />
     <None Include="packages.config" />
+    <None Include="Sitecore.SignalR.nuspec" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
