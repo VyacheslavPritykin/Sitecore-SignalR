@@ -1,26 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
-    <id>Sitecore.SignalR</id>
-    <version>1.0.0</version>
-    <title>Sitecore SignalR</title>
+    <id>$id$</id>
+    <version>$version$</version>
+    <title>$title$</title>
     <authors>Vyacheslav Pritykin</authors>
     <owners>Vyacheslav Pritykin</owners>
     <licenseUrl>https://github.com/VyacheslavPritykin/Sitecore-SignalR/blob/master/LICENSE</licenseUrl>
     <projectUrl>https://github.com/VyacheslavPritykin/Sitecore-SignalR</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>SignalR support for Sitecore</description>
-    <copyright>Copyright ©  2016 Vyacheslav Pritykin</copyright>
+    <description>$description$</description>
+    <copyright>$copyright$</copyright>
     <tags>Sitecore SignalR</tags>
     <language>en-US</language>
     <summary>Configures SignalR and tells Sitecore to not process SignalR path</summary>
-    <dependencies>
-      <dependency id="Sitecore.Owin" version="1.0.1" />
-      <dependency id="Microsoft.AspNet.SignalR" version="2.2.0" />
-    </dependencies>
   </metadata>
   <files>
     <file src="\App_Config\Include\Sitecore.SignalR.config" target="content\App_Config\Include\Sitecore.SignalR.config" />
-    <file src="bin\Release\Sitecore.SignalR.dll" target="lib\45\Sitecore.SignalR.dll" />
   </files>
 </package>

@@ -86,11 +86,13 @@
     <None Include="App_Config\Include\Sitecore.SignalR.config">
       <SubType>Designer</SubType>
     </None>
-    <None Include="nuget.pack.bat" />
     <None Include="packages.config" />
     <None Include="Sitecore.SignalR.nuspec" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>if $(ConfigurationName) == Release nuget pack "$(ProjectDir)\Sitecore.SignalR.csproj" -IncludeReferencedProjects -Verbosity detailed -Prop Configuration=Release</PostBuildEvent>
+  </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
