@@ -9,7 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Sitecore.SignalR</RootNamespace>
     <AssemblyName>Sitecore.SignalR</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
   </PropertyGroup>
@@ -57,8 +57,8 @@
       <HintPath>..\Sitecore.Core.API\Sitecore.Kernel.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.Owin, Version=2.0.0.31462, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Sitecore.Owin.2.0.0\lib\net452\Sitecore.Owin.dll</HintPath>
-      <Private>True</Private>
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Sitecore.Core.Api\Sitecore.Owin.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -71,7 +71,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Configuration\Settings.cs" />
-    <Compile Include="Pipelines\HttpRequest\IgnoreSignalRPath.cs" />
     <Compile Include="Pipelines\InitializeOwinMiddleware\InitializeSignalR.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
