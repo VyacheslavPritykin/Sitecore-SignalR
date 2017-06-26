@@ -16,6 +16,6 @@
     <summary>Configures SignalR and tells Sitecore 8.2 to not process SignalR path</summary>
   </metadata>
   <files>
-    <file src="\App_Config\Include\Sitecore.SignalR.config" target="content\App_Config\Include\Sitecore.SignalR.config" />
+    <file src=".\App_Config\Include\Sitecore.SignalR.config" target="content\App_Config\Include\Sitecore.SignalR.config" />
   </files>
 </package>
